@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Churrasco NaBrasa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body> 
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="navbar-logo">Calculadora NaBrasa</h1>
+        <img src="NABRASA.png" alt="Logo da Empresa" class="logo">
+        <ul class="navbar-menu">
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="C:\Users\lucas.queiroz1_uscso\Desktop\CRUD\Inicio\test.html">Inicio</a></li>
+        </ul> 
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <form id="formulario">
+      <h2>Quantas pessoas vão curtir o churrasco? </h2>
+      <div class="campo">
+        <label for="numHomens">Homens:</label>
+        <input type="number" id="numHomens" min="0" value="0">
+      </div>
+      <div class="campo">
+        <label for="numMulheres">Mulheres:</label>
+        <input type="number" id="numMulheres" min="0" value="0">
+      </div>
+      <div class="campo">
+        <label for="numCriancas">Crianças:</label>
+        <input type="number" id="numCriancas" min="0" value="0">
+      </div>
+      <div class="carne">
+        <h3>Carnes:</h3>
+    <ul>
+        <li><input type="checkbox" id="carneDeBoi" value="Carne de boi"> <label for="carnedeboi">Carne de boi</label></li>
+        <li><input type="checkbox" id="linguiçaSuina" value="Linguiça Suína"> <label for="linguiçaSuina">Linguiça Suína</label></li>
+        <li><input type="checkbox" id="costelaSuina" value="Costela Suína"> <label for="costelaSuina">Costela Suína</label></li>
+        <li><input type="checkbox" id="picanhaSuina" value="Picanha Suína"> <label for="picanhaSuina">Picanha Suína</label></li>
+       
+    </ul>
+     </div>
+<div class="acompanhamento">
+        <h3>Acompanhamentos:</h3>
+    <ul>
+        <li><input type="checkbox" id="pãoDeAlho" value="Pão de Alho"> <label for="pãoDeAlho">Pão de Alho</label></li>
+        <li><input type="checkbox" id="farofa" value="Farofa"> <label for="farofa">Farofa</label></li>
+        <li><input type="checkbox" id="queijo" value="queijo"> <label for="queijo">Queijo Coalho</label></li>
+        <li><input type="checkbox" id="arroz" value="Arroz"> <label for="arroz">Arroz</label></li>
+    </ul>
+</div>
+<div class="bebidas">
+        <h3>Bebidas:</h3>
+    <ul>
+        <li><input type="checkbox" id="água" value="Água"> <label for="água">Água</label></li>
+        <li><input type="checkbox" id="cervejas" value="Cervejas"> <label for="cervejas">Cervejas</label></li>
+        <li><input type="checkbox" id="Sucos" value="Sucos"> <label for="sucos">Sucos</label></li>
+        <li><input type="checkbox" id="refrigerantes" value="Refrigerantes"> <label for="refrigerantes">refrigerantes</label></li>
+    </ul>
+</div>
+         
+    <button onclick="calcular(event)">Calcular</button>
+    <a href="C:\Users\lucas.queiroz1_uscso\Desktop\CRUD2\Inicio\test.html" id="contratarServico" class="destacado" style="display: none;" onclick="contratarServico()">Contratar Serviço</a>
+    
+    <div id="resultados">
+      <h2>Resultado:</h2>
+      <ul id="listaResultados"></ul>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
